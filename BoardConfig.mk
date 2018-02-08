@@ -147,9 +147,14 @@ TW_INCLUDE_FB2PNG := true
 TW_NO_CPU_TEMP := true
 TW_REBOOT_BOOTLOADER := true
 TW_REBOOT_RECOVERY := true
-TW_HAS_DOWNLOAD_MODE := true
-TW_EXCLUDE_SUPERSU := true
+#TW_HAS_DOWNLOAD_MODE := true
+#TW_EXCLUDE_SUPERSU := true
 TW_USE_TOOLBOX := true
+TW_DEVICE_VERSION := Panelli-DhirajMS
+TW_INCLUDE_CRYPTO := true
+
+PRODUCT_COPY_FILES += device/moto/panelli/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
+PRODUCT_COPY_FILES += device/moto/panelli/rootdir/recovery.fstab:recovery/root/etc/recovery.fstab
 
 TARGET_SYSTEM_PROP := device/moto/panelli/system.prop
 TARGET_SPECIFIC_HEADER_PATH := device/moto/panelli/include
